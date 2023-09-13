@@ -1,0 +1,38 @@
+.small-doctor {
+    display: none;
+}
+
+.makeAppoient {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .big-doctor {
+        display: none !important;
+    }
+
+    .small-doctor {
+        display: block;
+    }
+
+    .makeAppoient {
+        display: flex;
+        justify-content: space-between !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .makeAppoient {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .makeAppoient {
+        display: flex;
+        flex-direction: column;
+    }
+}
